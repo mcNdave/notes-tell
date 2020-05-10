@@ -1,0 +1,31 @@
+{
+    "name": "mcnd/notes-tell",
+    "description": "A library linking Notes and Tell together.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dave Mc Nicoll",
+            "email": "mcndave@gmail.com"
+        }
+    ],
+    "require": {
+        "mcnd/notes": "master-dev",
+        "mcnd/tell": "master-dev"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mcNdave/notes.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mcNdave/tell.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Notes\\Tell\\": "src/"
+        }
+    }
+}
